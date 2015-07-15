@@ -1,4 +1,4 @@
-data Node t = Node{datum::t,next::Node t} | End{datum::t} deriving (Show,Eq)
+data Node t = Node{datum::t,next::Node t} | Nil deriving (Show,Eq)
 
 cons :: [t] -> Node t
 cons [a] = End a
